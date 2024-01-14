@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+              <div class="header-inner">
+                 <a href="index.html" class="header-logo">
+                    <img src="img/Logo.png" alt="">
+                 </a>
+                 <nav class="header-menu">
+                    <!--Menu-links-->
+                    <a href="index.html" class="header-item"> 
+                        Главная
+                    </a>
+                    <a href="warehouse.html" class="header-item">
+                        Наши склады
+                    </a>
+                    <a href="broker.html" class="header-item">
+                        Брокерам
+                    </a>
+                    <a href="contacts.html" class="header-item">
+                        Контакты
+                    </a>
+                    <!--chooseLanguage-->
+                    <select class="custom-select" name="chooseLanguage" id="mySelect"> 
+                        <option value="Ru">RU</option>
+                        <option value="Ru">Kz</option>
+                        <option value="Ru">Eng</option>
+                        <option value="Ru">Es</option>
+                    </select>
+                    <!--Menu-burger-->
+                    <div class="header-burger" id="mobile-menu">
+                        <div class=""></div>
+                        <div class=""></div>
+                        <div class=""></div>
+                        <p class="burger-content">
+                            <!--Menu-links-->
+                            <a href="index.html" class="header-item"> 
+                                Главная
+                            </a>
+                            <a href="warehouse.html" class="header-item">
+                                Наши склады
+                            </a>
+                            <a href="broker.html" class="header-item">
+                                Брокерам
+                            </a>
+                            <a href="contacts.html" class="header-item">
+                                Контакты
+                            </a>
+                        </p>
+                    </div>
+                 </nav>
+              </div>
+            </div>                
+        </header>
+        <main class="main">
+            <section class="section section-intro">
+                <div class="intro-bg">
+                    <img src="img/INTRO-BG].jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="intro-inner">
+                        <!--content-->
+                       <div class="intro-content">
+                        <h2 class="section-suptitle intro-suptitle">
+                            Flower Fracht Karaganda  
+                        </h2>
+                        <h1 class="section-title intro-title">
+                            Наши склады
+                        </h1>
+                       </div>
+                    </div>
+                </div>
+            </section>
+            <div class="section section-map">
+                <div class="container">
+                    <div class="map-tabs">
+                        <div class="map-tab" id="tab1" onclick="changeTab('tab1')">Казахстан</div>
+                        <div class="map-tab active" id="tab2" onclick="changeTab('tab2')">Украина</div>
+                        <div class="map-tab" id="tab3" onclick="changeTab('tab3')">Узбекистан</div>
+                        <div class="map-tab" id="tab4" onclick="changeTab('tab4')">Россия</div>
+                        <div class="map-tab" id="tab5" onclick="changeTab('tab5')">Беларусь</div>
+                        <div class="map-tab" id="tab6" onclick="changeTab('tab6')">Туркменистан</div>
+                        <div class="map-tab" id="tab7" onclick="changeTab('tab7')">Армения</div>
+                    </div>
+                    <!--TAB1-->
+                    <div class="map-geo">
+                        <div class="map-geo_items">
+                            <div class="geo-item active" onclick="toggleContent(this)">
+                                <h2 class="geo-item_title">Киев</h2>
+                                <div class="geo-item_content">
+                                    <h3 class="geo-content_title"> 
+                                        ул Хрещатик 32       
+                                    </h3>
+                                    <div class="geo-content_info">
+                                        <h4 class="content_info-title">
+                                            Режим работы: 
+                                        </h4>
+                                        <p>
+                                            Пн-Пт - с 9:00 до 18:00
+                                        </p>   
+                                        <p>
+                                            Сб-Вс - выходной
+                                        </p>
+                                        <h4 class="content_info-title">
+                                            Контакты: 
+                                        </h4>
+                                        <p>
+                                            +38 067 25 4576 - Олег
+                                        </p>
+                                        <p>
+                                            +38 067 25 4576 - Леся
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                              
+                            <div class="geo-item" onclick="toggleContent(this)">
+                                <h2 class="geo-item_title">Харьков</h2>
+                                <div class="geo-item_content">
+                                    <h3 class="geo-content_title"> 
+                                        ул Сумскaя 65     
+                                    </h3>
+                                    <div class="geo-content_info">
+                                        <h4 class="content_info-title">
+                                            Режим работы: 
+                                        </h4>
+                                        <p>
+                                            Пн-Пт - с 9:00 до 18:00
+                                        </p>   
+                                        <p>
+                                            Сб-Вс - выходной
+                                        </p>
+                                        <h4 class="content_info-title">
+                                            Контакты: 
+                                        </h4>
+                                        <p>
+                                            +38 067 25 4576 - Вася
+                                        </p>
+                                        <p>
+                                            +38 067 25 4576 - Оксана
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="geo-item" onclick="toggleContent(this)">
+                                <h2 class="geo-item_title">Харьков</h2>
+                                <div class="geo-item_content">
+                                    <h3 class="geo-content_title"> 
+                                        ул Свободы  5    
+                                    </h3>
+                                    <div class="geo-content_info">
+                                        <h4 class="content_info-title">
+                                            Режим работы: 
+                                        </h4>
+                                        <p>
+                                            Пн-Пт - с 9:00 до 18:00
+                                        </p>   
+                                        <p>
+                                            Сб-Вс - выходной
+                                        </p>
+                                        <h4 class="content_info-title">
+                                            Контакты: 
+                                        </h4>
+                                        <p>
+                                            +38 067 25 4576 - Олег
+                                        </p>
+                                        <p>
+                                            +38 067 25 4576 - Александр
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="geo-item" onclick="toggleContent(this)">
+                                <h2 class="geo-item_title">Полтава</h2>
+                                <div class="geo-item_content">
+                                    <h3 class="geo-content_title"> 
+                                        ул Центральная 31  
+                                    </h3>
+                                    <div class="geo-content_info">
+                                        <h4 class="content_info-title">
+                                            Режим работы: 
+                                        </h4>
+                                        <p>
+                                            Пн-Пт - с 9:00 до 18:00
+                                        </p>   
+                                        <p>
+                                            Сб-Вс - выходной
+                                        </p>
+                                        <h4 class="content_info-title">
+                                            Контакты: 
+                                        </h4>
+                                        <p>
+                                            +38 067 25 4576 - Олег
+                                        </p>
+                                        <p>
+                                            +38 067 25 4576 - Леся
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map" class="map-geo_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d258214.13775141744!2d30.38248851154097!3d50.429250987488395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1704473458202!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                   <a href="#" class="footer-logo">
+                    <img src="img/Logo.png" alt="">
+                   </a>
+                    <div class="footer-items">
+                        <div class="footer-list">
+                            <a href="index.html" class="footer-link">ГЛАВНАЯ</a>
+                            <a href="warehouse.html" class="footer-link">НАШИ СКЛАДЫ</a>
+                            <a href="broker.html" class="footer-link">БРОКЕРАМ</a>
+                            <a href="contacts.html" class="footer-link">КОНТАКТЫ</a>
+                        </div>
+                        <div class="footer-list">
+                            <a href="" class="footer-link">+380 674 4512</a>
+                            <a href="" class="footer-link">ffkaragandainfo@gmail.com</a>
+                        </div>
+                        <div class="footer-list">
+                            <a href="" class="footer-link">Политика конфеденциальности</a>
+                            <a href="" class="footer-link">Copyright ©  2021  All rights reserved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+     </div> 
+     <script src="Js/script.js"></script>
+</body>
+</html>
